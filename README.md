@@ -1,5 +1,8 @@
 # twip, a twitter API proxy in PHP
 
+## bugfixed:
+  Undefined index: SCRIPT\_NAME
+
 ## Prerequisite
 
 - PHP >= 5.3.0 with curl support.

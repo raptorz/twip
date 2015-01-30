@@ -301,7 +301,7 @@ class twip{
         $full_request_uri = substr(
             $_SERVER['REQUEST_URI'],
 //            strlen(dirname($_SERVER['SCRIPT_NAME'])));
-            strlen(preg_replace('/^https?:\/\/'.$_SERVER['HTTP_HOST'].'/i','    ',$this->base_url))-1);
+            strlen(preg_replace('/^https?:\/\/'.$_SERVER['HTTP_HOST'].'/i','',$this->base_url))-1);
 
         $prefix = substr($full_request_uri, 0, 3);
         switch($prefix) {
